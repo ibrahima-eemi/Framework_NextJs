@@ -115,7 +115,7 @@ const articles = [
 ### Remarques
 
 **🛠️ PostgreSQL : Assurez-vous que votre instance PostgreSQL est en cours d'exécution si vous utilisez Prisma.**
-**💡 Alias @ : L'alias @ est configuré pour mapper src/* dans tsconfig.json. Utilisez-le pour les imports des composants.**
+**💡 Alias @ : L'alias @ est configuré pour mapper src/ dans tsconfig.json. Utilisez-le pour les imports des composants.**
 
 ## Prochaines étapes (facultatif)
 
