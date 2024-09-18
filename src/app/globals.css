@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Appliquer une transition douce pour le changement de thème */
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+  @apply bg-gray-100 text-gray-900; /* Styles par défaut pour le mode clair */
+}
+
+/* Styles globaux pour le mode sombre */
+.dark body {
+  @apply bg-gray-900 text-white; /* Styles par défaut pour le mode sombre */
+}
+
+/* Optionnel : Ajuster le fond des boutons dans le mode sombre */
+.dark .btn-primary {
+  @apply bg-indigo-500 hover:bg-indigo-600 text-white;
+}
+
+/* Styles supplémentaires pour ajuster le texte et les fonds si nécessaire */
