@@ -21,14 +21,22 @@
 
 ## Installation
 
+<<<<<<< HEAD
 ### Clonez le projet sur votre machine locale
+=======
+### Clonez le projet sur votre machine locale:
+>>>>>>> d331414fe36c5862baa69c71e9678f839d4aa58b
 
 ```bash
 git clone https://github.com/votre-utilisateur/mon-blog.git
 cd mon-blog
 ```
 
+<<<<<<< HEAD
 ## Installez les dépendances
+=======
+## Installez les dépendances:
+>>>>>>> d331414fe36c5862baa69c71e9678f839d4aa58b
 
 ```bash
 npm install
@@ -36,21 +44,36 @@ npm install
 
 ## Configuration de Prisma
 
+<<<<<<< HEAD
 ### Si vous utilisez Prisma pour gérer la base de données, suivez ces étapes
 
 ## Configurez votre base de données PostgreSQL et mettez à jour le fichier .env
+=======
+### Si vous utilisez Prisma pour gérer la base de données, suivez ces étapes:
+
+### Configurez votre base de données PostgreSQL et mettez à jour le fichier .env:
+
+>>>>>>> d331414fe36c5862baa69c71e9678f839d4aa58b
 
 ```bash
 DATABASE_URL="postgresql://<username>:<password>@localhost:5432/<dbname>"
 ```
 
+<<<<<<< HEAD
 ## Exécutez les migrations Prisma pour initialiser la base de données
+=======
+## Exécutez les migrations Prisma pour initialiser la base de données:
+>>>>>>> d331414fe36c5862baa69c71e9678f839d4aa58b
 
 ```bash
 npx prisma migrate dev --name init
 ```
 
+<<<<<<< HEAD
 ## Générez le client Prisma
+=======
+## Générez le client Prisma:
+>>>>>>> d331414fe36c5862baa69c71e9678f839d4aa58b
 
 ```bash
 npx prisma generate
@@ -58,13 +81,21 @@ npx prisma generate
 
 ## Démarrage du projet
 
+<<<<<<< HEAD
 ### Pour démarrer le serveur de développement
+=======
+### Pour démarrer le serveur de développement:
+>>>>>>> d331414fe36c5862baa69c71e9678f839d4aa58b
 
 ```bash
 npm run dev
 ```
 
+<<<<<<< HEAD
 **Le site sera disponible surhttp://localhost:3000.**
+=======
+**Le site sera disponible sur http://localhost:3000.**
+>>>>>>> d331414fe36c5862baa69c71e9678f839d4aa58b
 
 ## Structure du projet
 
@@ -108,10 +139,17 @@ const articles = [
   },
   // Ajouter d'autres articles ici
 ];
+<<<<<<< HEAD
 
 ```
 
 ## Remarques
+=======
+```
+
+
+### Remarques
+>>>>>>> d331414fe36c5862baa69c71e9678f839d4aa58b
 
 **🛠️ PostgreSQL : Assurez-vous que votre instance PostgreSQL est en cours d'exécution si vous utilisez Prisma.**
 **💡 Alias @ : L'alias @ est configuré pour mapper src/ dans tsconfig.json. Utilisez-le pour les imports des composants.**
