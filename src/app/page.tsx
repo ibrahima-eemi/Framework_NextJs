@@ -1,18 +1,54 @@
+// src/app/page.tsx
 import Link from 'next/link';
+import { articles } from '@/data/articlesData';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
-      <div className="max-w-2xl text-center p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
-        <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-          Bienvenue sur mon blog dédié au développement en <span className="text-indigo-600 dark:text-indigo-400">Nextjs</span>
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 py-8">
+      {/* Hero Section - Bandeau plus compact */}
+      <section className="text-center py-12 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-gray-800 dark:to-gray-900">
+        <h1 className="text-4xl font-bold text-white">
+        The latest Next.js news
         </h1>
+        <p className="mt-2 text-lg text-gray-200">
+          Découvrez les meilleures pratiques pour développer des applications modernes avec Next.js, Prisma, TailwindCSS, et bien plus encore !
+        </p>
+      </section>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto py-12 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {articles.map((article) => (
+          <div key={article.id} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-all hover:shadow-2xl">
+            <img
+              src={article.image}
+              alt={article.title}
+              className="rounded-lg w-full h-48 object-cover mb-6"
+            />
+            <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+              {article.title}
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              {article.description}
+            </p>
+            <Link href={`/articles/${article.id}`}>
+              <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-full">
+                Lire plus
+              </button>
+            </Link>
+          </div>
+        ))}
+      </div>
+
+      {/* Call to Action Section */}
+      <section className="text-center py-10 bg-indigo-600 dark:bg-indigo-800 text-white">
+        <h2 className="text-3xl font-bold mb-4">Explorez plus d'articles</h2>
+        <p className="text-md mb-6">Rejoignez notre communauté et restez à jour sur les dernières tendances du développement web.</p>
         <Link href="/articles">
-          <button className="inline-block px-6 py-3 bg-indigo-600 dark:bg-indigo-500 text-white rounded-full font-semibold hover:bg-indigo-700 dark:hover:bg-indigo-600 transition duration-300">
-            Lire les articles
+          <button className="bg-white text-indigo-600 font-semibold py-3 px-6 rounded-full hover:bg-gray-200 transition-colors">
+            Voir tous les articles
           </button>
         </Link>
-      </div>
+      </section>
     </div>
   );
 }

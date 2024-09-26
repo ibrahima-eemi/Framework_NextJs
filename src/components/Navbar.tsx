@@ -5,15 +5,12 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <a href="/" className="text-xl font-bold text-white">
-              Mon Blog
+              Next.js
             </a>
           </div>
           <div className="flex items-center space-x-4">
             <a href="/" className="text-white hover:text-indigo-400 transition">
               Accueil
-            </a>
-            <a href="/articles" className="text-white hover:text-indigo-400 transition">
-              Articles
             </a>
             <a href="/contact" className="text-white hover:text-indigo-400 transition">
               Contact
