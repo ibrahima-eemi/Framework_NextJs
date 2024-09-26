@@ -1,4 +1,3 @@
-// src/app/page.tsx
 import Link from 'next/link';
 import { articles } from '@/data/articlesData';
 
@@ -8,11 +7,19 @@ export default function HomePage() {
       {/* Hero Section - Bandeau plus compact */}
       <section className="text-center py-12 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-gray-800 dark:to-gray-900">
         <h1 className="text-4xl font-bold text-white">
-        The latest Next.js news
+          The latest Next.js news
         </h1>
         <p className="mt-2 text-lg text-gray-200">
           Découvrez les meilleures pratiques pour développer des applications modernes avec Next.js, Prisma, TailwindCSS, et bien plus encore !
         </p>
+        {/* Image below the hero section */}
+      <div className="max-w-7xl mx-auto my-8">
+        <img
+          src="https://codewithmosh.com/_next/image?url=https%3A%2F%2Fcdn.filestackcontent.com%2F8MbtJ4hTAaOk3KPcptqZ&w=3840&q=75"
+          alt="Next.js Features"
+          className="rounded-lg w-full h-auto object-cover"
+        />
+      </div>
       </section>
 
       {/* Main Content */}
@@ -38,17 +45,6 @@ export default function HomePage() {
           </div>
         ))}
       </div>
-
-      {/* Call to Action Section */}
-      <section className="text-center py-10 bg-indigo-600 dark:bg-indigo-800 text-white">
-        <h2 className="text-3xl font-bold mb-4">Explorez plus d'articles</h2>
-        <p className="text-md mb-6">Rejoignez notre communauté et restez à jour sur les dernières tendances du développement web.</p>
-        <Link href="/articles">
-          <button className="bg-white text-indigo-600 font-semibold py-3 px-6 rounded-full hover:bg-gray-200 transition-colors">
-            Voir tous les articles
-          </button>
-        </Link>
-      </section>
     </div>
   );
 }
