@@ -426,46 +426,5 @@ export const articles = [
       date: "2024-09-14",
       image:"https://mobikul.com/wp-content/uploads/2024/06/next-js-advanced-features.webp",
     },
-    {
-      id: 10,
-      title: "SEO avec Next.js",
-      description:
-        "Optimisez le SEO de vos applications web grâce aux fonctionnalités de Next.js.",
-      content:`<section class="mb-6">
-  <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-    Optimiser le SEO avec Next.js
-  </h2>
-  
-  <p class="text-gray-700 dark:text-gray-300 mb-4">
-    Next.js facilite l'optimisation SEO en exploitant des fonctionnalités clés comme le rendu côté serveur (SSR), 
-    qui permet de précharger les pages avec tout leur contenu pour les moteurs de recherche. Cette technique est 
-    particulièrement efficace pour indexer rapidement les pages et améliorer leur visibilité dans les résultats 
-    de recherche.
-  </p>
-  
-  <p class="text-gray-700 dark:text-gray-300 mb-4">
-    En outre, Next.js permet de générer dynamiquement des balises méta pour chaque page. Les balises <code>&lt;meta&gt;</code> 
-    (comme <code>&lt;title&gt;</code>, <code>&lt;meta description&gt;</code>, et les balises Open Graph) sont essentielles pour 
-    fournir aux moteurs de recherche et aux plateformes sociales des informations détaillées sur le contenu de chaque 
-    page. Cela permet une meilleure indexation et un partage optimisé sur les réseaux sociaux.
-  </p>
-  
-  <p class="text-gray-700 dark:text-gray-300 mb-4">
-    Un autre avantage clé est la gestion des URL propres et optimisées pour le SEO. Avec Next.js, vous pouvez facilement 
-    configurer des routes conviviales et bien structurées, comme <code>/produits/nouvel-article</code> au lieu de 
-    <code>/produits?id=123</code>. Les URL propres sont non seulement meilleures pour le SEO, mais elles améliorent 
-    aussi l'expérience utilisateur.
-  </p>
-  
-  <p class="text-gray-700 dark:text-gray-300">
-    En résumé, Next.js offre une approche complète pour maximiser la visibilité de vos applications sur les moteurs 
-    de recherche, avec le SSR, les balises méta dynamiques et les URL propres. En appliquant ces techniques, vous 
-    pouvez non seulement améliorer le classement de votre site, mais aussi attirer plus de trafic organique.
-  </p>
-</section>
-`,
-      date: "2024-09-15",
-      image:"https://hackernoon.imgix.net/images/GPJ76xULl7geuFTrXbplNnbeQCf2-5i92u5z.jpeg",
-    },
   ];
   
